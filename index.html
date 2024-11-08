@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <video autoplay muted loop id="video-fond">
+        <source src="mer.mp4" type="video/mp4">
+    </video>
+
+    <div class="conteneur">
+        <h1>Météo en Temps Réel</h1>
+        <form id="formulaire-meteo">
+            <input type="text" id="ville" placeholder="Entrez une ville" required>
+            <button type="submit">Voir la météo</button>
+        </form>
+
+        <div id="affichage-meteo" class="affichage-meteo">
+            <div id="aujourdhui" class="carte-meteo"></div>
+            <div id="previsions" class="previsions"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
